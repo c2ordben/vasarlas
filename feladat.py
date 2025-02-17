@@ -1,6 +1,5 @@
 f = open('vasarlas.csv', 'r')
 
-szamok=[]
 
 for szam in f:
     szam = szam.strip()
@@ -20,8 +19,16 @@ def nincsKoltes(tmp):
             nulla += 1
     print(nulla, 'nap nem volt költés')
 
+
+def atlagKoltes(tmp):
+    atlag = 0
+    for nap in tmp:
+        atlag += int(nap)
+    print('átlag költés:', atlag/len(tmp))
+
 f.close
 
 
 koltott(tmp)
 nincsKoltes(tmp)
+atlagKoltes(tmp)
