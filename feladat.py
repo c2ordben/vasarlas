@@ -52,7 +52,12 @@ def osszesKoltes(tmp):
     print(osszesen,'volt az össz költekezés1')
 
 
-
+def sorozatKoltesNelkul(tmp):
+    sor = 0
+    for i in range(len(tmp)):
+        if int(tmp[i]) == int(tmp[i-1]):
+            sor += 1
+    print(sor, 'nap volt a leghosszabb sorozat vásárlás nélkül')
 
 f.close
 
@@ -63,3 +68,4 @@ atlagKoltes(tmp)
 legKisebb(tmp)
 legNagyobb(tmp)
 osszesKoltes(tmp)
+sorozatKoltesNelkul(tmp)
