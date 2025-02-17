@@ -26,9 +26,28 @@ def atlagKoltes(tmp):
         atlag += int(nap)
     print('átlag költés:', atlag/len(tmp))
 
+
+def legKisebb(tmp):
+    legkisebb = 10000
+    for nap in tmp:
+        if int(nap) != 0:
+            if int(nap) < legkisebb:
+                legkisebb = int(nap)
+    print(legkisebb,'volt a legkisebb vásárlás')
+
+
+def legNagyobb(tmp):
+    legnagyobb = 1
+    for nap in tmp:
+        if int(nap) > legnagyobb:
+            legnagyobb = int(nap)
+    print(legnagyobb,'volt a legnagyobb vásárlás')
+
 f.close
 
 
 koltott(tmp)
 nincsKoltes(tmp)
 atlagKoltes(tmp)
+legKisebb(tmp)
+legNagyobb(tmp)
