@@ -43,6 +43,17 @@ def legNagyobb(tmp):
             legnagyobb = int(nap)
     print(legnagyobb,'volt a legnagyobb vásárlás')
 
+
+def osszesKoltes(tmp):
+    osszesen = 0
+    for nap in tmp:
+        nap = int(nap)
+        osszesen += nap
+    print(osszesen,'volt az össz költekezés1')
+
+
+
+
 f.close
 
 
@@ -51,3 +62,4 @@ nincsKoltes(tmp)
 atlagKoltes(tmp)
 legKisebb(tmp)
 legNagyobb(tmp)
+osszesKoltes(tmp)
