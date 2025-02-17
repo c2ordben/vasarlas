@@ -61,11 +61,13 @@ def sorozatKoltesNelkul(tmp):
 
 f.close
 
+def definition(tmp):
+    koltott(tmp)
+    nincsKoltes(tmp)
+    atlagKoltes(tmp)
+    legKisebb(tmp)
+    legNagyobb(tmp)
+    osszesKoltes(tmp)
+    sorozatKoltesNelkul(tmp)
 
-koltott(tmp)
-nincsKoltes(tmp)
-atlagKoltes(tmp)
-legKisebb(tmp)
-legNagyobb(tmp)
-osszesKoltes(tmp)
-sorozatKoltesNelkul(tmp)
+definition(tmp)
